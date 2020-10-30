@@ -3,19 +3,24 @@
     <head>
         <title>BurgerMaster</title>
         <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="/css/styledoc.css">
     </head>
+
     <body>
-      <main>
-        <h1>Welcome to Burger Master</h1>
+      <main class="header">
+        <h1 > Welcome to Burger Master</h1>
+        <img src= "https://raster-static.postmates.com/?url=https%3A%2F%2Fd1725r39asqzt3.cloudfront.net%2F2957b79a-1d27-4336-92f5-7427c0b3e4b1%2Forig.jpg&quality=85&w=640&h=0&mode=auto&format=webp&v=4" alt="Header" title="Headerpicture">
       </main>
 
-      <section>
+
+
+      <section id="select">
         <h2>Select burger</h2>
         <p> This is where you choose your burger </p>
-        <table>
+        <table class="table">
           <thead>
             <th> El Maco GRANDE </th>
-            <th> Chick-Fil-A Deluxe Sandwich </th>
+            <th> Deluxe Sandwich </th>
             <th> Halloumiburgare </th>
           </thead>
 
@@ -27,20 +32,14 @@
           <img src="https://www.mcdonalds.com/content/dam/nordic/nfl/nutrition/Items/Regular/mcd-sv-elmaco-big.jpg" alt="El Maco GRANDE" title="El Maco GRANDE" width="200">
           </center>
           <ul>
-            <li>Cheese</li>
-            <li>Beef </li>
+            <li> <span class="allergy"> Cheese </span></li>
+            <li> <span class="allergy">Beef </span></li>
             <li>Tomato </li>
             <li>Salsa </li>
-            <li>Wheat burger bun </li>
+            <li><span class="allergy"> Wheat burger bun </span> </li>
+
 
           </ul>
-
-          <dl>
-            <dt>Allergies:</dt>
-
-            <dd>This burger contains lactose, gluten and meat. </dd>
-
-          </dl>
 
           </td>
 
@@ -50,17 +49,13 @@
             <img src="https://www.cfacdn.com/img/order/COM/Menu_Refresh/Entree/Entree%20PDP/_0000s_0004_NEWStack6200001CFAPDPDeluxeSandwich1085png.png" alt="Chicken Sandwich" title="Chicken Sandwich" width="200">
           </center>
         <ul>
-          <li>Cheese</li>
-          <li>Chicken </li>
+          <li><span class="allergy"> Cheese </span></li>
+          <li><span class="allergy"> Chicken </span> </li>
           <li>Tomato </li>
           <li>Original sauce </li>
-          <li>Wheat burger bun </li>
+          <li><span class="allergy"> Wheat burger bun </span> </li>
         </ul>
 
-        <dl>
-          <dt>Allergies:</dt>
-          <dd>This burger contains lactose, gluten and chicken. </dd>
-        </dl>
       </td>
 
       <td>
@@ -69,17 +64,11 @@
         </center>
         <ul>
           <li>Onion</li>
-          <li>Halloumi </li>
+          <li> <span class="allergy"> Halloumi </span> </li>
           <li>Tomato </li>
           <li>Original sauce </li>
-          <li>Wheat burger bun </li>
+          <li> <span class="allergy"> Wheat burger bun </span> </li>
         </ul>
-
-        <dl>
-          <dt>Allergies:</dt>
-          <dd>This burger contains lactose and gluten. </dd>
-        </dl>
-
         </td>
       </tr>
       </tbody>
@@ -87,7 +76,7 @@
 
       </section>
 
-      <section>
+      <section id="information">
         <h2>Customer information</h2>
         <p> This is where you fill out your contact information </p>
 
@@ -123,15 +112,15 @@
         </p>
         <p> Gender </p>
         <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label><br>
+          <label for="male">Male</label><br>
         <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label><br>
+          <label for="female">Female</label><br>
         <input type="radio" checked="checked" id="other" name="gender" value="other">
-        <label for="other">Other</label>
+          <label for="other">Other</label>
 
       </section>
 
-      <button type="submit"><img src=https://thumbs.dreamstime.com/b/hamburgare-f%C3%B6r-amerikansk-ost-f%C3%B6r-tecknad-film-l%C3%A4cker-klassisk-med-gr%C3%B6nsaker-37910605.jpg alt="Send order" title="Send order" width="50">  Send order</button>
+      <button type="submit" class="submit" ><img src=https://thumbs.dreamstime.com/b/hamburgare-f%C3%B6r-amerikansk-ost-f%C3%B6r-tecknad-film-l%C3%A4cker-klassisk-med-gr%C3%B6nsaker-37910605.jpg alt="Send order" title="Send order" width="50">  Send order</button>
 
       <footer><hr>Siri Nordlander Inc</footer>
     </body>
