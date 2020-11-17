@@ -8,27 +8,42 @@ function MenuItem(bn, glu, lac, img) {
 
     }
     */
-
+/*
+function MyOrder(fn, em, st, hn, pay, gen){
+  this.fullName = fn;
+  this.email = em;
+  this.street = st;
+  this.houseNumber = hn;
+  this.payMethod = pay;
+  this.gender = gen;
+}
+*/
 
 var v = new Vue({
       el: '#vmenu',
       data: {
-        burger_list:burgers
+        burger_list:burgers,
       },
+
+
+
     })
 
-var ord = new Vue({
+  var myButton = document.getElementById("orderb");
+  myButton.addEventListener("click", myOrder);
+
+/*var ord = new Vue({
       el: '#order',
       data: {
-        clicked: ""
+        clicked: "",
+        infoOrder:""
       },
       methods: {
         myOrder: function() {
           console.log("Button clicked!");
-          //this.clicked = 'Button clicked!';
         }
     }
-  })
+  })*/
 
 
 
