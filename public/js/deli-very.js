@@ -34,5 +34,8 @@ var vm = new Vue({
                                 orderItems: ["Beans", "Curry"]
                               });
     }
-  }
+
+
+    }
+  
 });

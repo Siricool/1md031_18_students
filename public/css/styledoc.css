@@ -3,7 +3,7 @@
 
 
  body {
-    font-family: "Courier New", serif;
+    font-family: "Times New Roman", serif;
     font-size: 20pt;
 }
 
@@ -52,7 +52,7 @@ section {
 .box {
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  grid-gap: 10px;
+  grid-gap: 40px;
 }
 
 .burger{
@@ -60,12 +60,13 @@ section {
 
 }
 img{
-  width: 100px;
+  width: 200px;
 
 
 }
 
 .ingredients{
+  font-weight: bold;
 }
 
 #information{

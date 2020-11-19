@@ -1,25 +1,27 @@
 
 
-
 function myOrder(){
   console.log("Button clicked!");
   console.log(orderInfo());
   console.log(choseBurger());
 
   var infoList = orderInfo();
-  document.getElementById("infoDisp").innerHTML = "Your order information: "
+  document.getElementById("infoDisp").innerHTML = "Order confirmation and your information"
+  document.getElementById("nameDisp").innerHTML = "Name: " + infoList[0];
+  document.getElementById("mailDisp").innerHTML = "Mail: " + infoList[1];
+  document.getElementById("payDisp").innerHTML = "Payment method: " + infoList[2];
+  document.getElementById("genderDisp").innerHTML = "Gender: " + infoList[3];
 
-  for (info in infoList){
-    document.getElementById("infoDisp").innerHTML += infoList[info] + " ";
-  }
-  document.getElementById("infoBurger").innerHTML = "Burger chosen: " + choseBurger();
+
+
+  document.getElementById("infoBurger").innerHTML = "Your order: " + choseBurger();
 }
 
 function orderInfo(){
   var fullName = document.getElementById("fullname");
   var email = document.getElementById("mail");
-  var street = document.getElementById("street");
-  var house = document.getElementById("number");
+  //var street = document.getElementById("street");
+  //var house = document.getElementById("number");
 
   var paymentList = document.getElementById("payment");
   var payment = paymentList.options[paymentList.selectedIndex].text;
@@ -34,8 +36,8 @@ function orderInfo(){
   //orderList.push(info);
   orderList.push(fullName.value);
   orderList.push(email.value);
-  orderList.push(street.value);
-  orderList.push(house.value);
+  //orderList.push(street.value);
+  //orderList.push(house.value);
   orderList.push(payment);
   orderList.push(gender.value);
 
